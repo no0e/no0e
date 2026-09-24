@@ -13,7 +13,7 @@ regions that hold 87.8 to 90.6% on vessels never seen in training. Beats a
 published transformer three times its size inside that paper's own protocol.
 `PyTorch` `mixture density networks` `conformal prediction`
 
-**[Two-Stage Hybrid Recommender](https://github.com/no0e/two-stage-hybrid-recommender)** - sequential recommendation on Amazon products
+**[Two-Stage Hybrid Recommender](https://github.com/no0e/two-stage-recommender)** - sequential recommendation on Amazon products
 LightGCN for candidate retrieval, BERT4Rec for reranking, content-based
 embeddings for the cold-start items neither of them can see. First place out of
 80 in an in-class Kaggle competition.
