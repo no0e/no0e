@@ -8,9 +8,9 @@ Statistics and machine learning engineering student at ENSAI, Rennes.
 
 **[Residual Trajectory Prediction](https://github.com/no0e/residual-trajectory-prediction)** - where a ship will be after it stops broadcasting
 A 317k-parameter mixture density network that predicts the *residual* of a
-parameter-free kinematic prior. 29% below that prior on New York Harbor traffic, and 90% confidence
+parameter-free kinematic prior.90% confidence
 regions that hold 87.8 to 90.6% on vessels never seen in training. Beats a
-published transformer three times its size inside that paper's own protocol.
+published transformer three times its size inside that paper's own protocol. ( repo still under construction ) 
 `PyTorch` `mixture density networks` `conformal prediction`
 
 **[Two-Stage Hybrid Recommender](https://github.com/no0e/two-stage-recommender)** - sequential recommendation on Amazon products
