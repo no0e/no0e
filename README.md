@@ -2,6 +2,8 @@
 
 Statistics and machine learning engineering student at ENSAI, Rennes.
 
+I'm currently uploading my past projects here, organized and documented in English.
+
 ---
 
 ### Projects
@@ -42,4 +44,4 @@ constructor pace across eras. Academic team project, 4 months.
 
 ### Currently
 
-Finishing at ENSAI, and looking for machine learning intership
+Finishing my studies at ENSAI and looking for a 6-month internship.
