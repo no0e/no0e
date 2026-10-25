@@ -2,13 +2,22 @@
 
 Statistics and machine learning engineering student at ENSAI, Rennes.
 
-> **About the commit dates.** Most of the projects below were first built in private school and team
-> repositories (ENSAI, Leiden). I forked them here, cleaned them up and translated them into English
-> in autumn 2026, so the commit history shows when each one was republished, not when the work was done.
-
 ---
 
 ### Projects
+
+**[Recipe Parser](https://github.com/no0e/recipe-parser)** - fine-tuning a small LLM for structured extraction
+Turns a messy recipe blog page (life story, ads, comments) into a clean structured recipe.
+Qwen2.5-1.5B fine-tuned with QLoRA on synthetic noisy pages: 0.93 ingredient F1 on page layouts
+never seen in training, against 0.61 for a rule-based parser and 0.18 for one-shot prompting.
+Exported to GGUF and served on CPU with llama.cpp, with a live demo on Cloud Run.
+`QLoRA` `Qwen2.5` `llama.cpp` `FastAPI`
+
+**[Causal Uplift on the Criteo Trial](https://github.com/no0e/causal-uplift)** - who should see an ad
+Not "who will visit" but "who will visit *because of* the ad". Five uplift models on a 14M-row
+randomised trial, processed out of core with DuckDB and Polars: treating only the top 10% of
+users keeps 85% of the campaign's incremental visits, against 11% for random targeting.
+`causal inference` `EconML` `DoWhy` `DuckDB`
 
 **[Two-Stage Hybrid Recommender](https://github.com/no0e/two-stage-recommender)** - sequential recommendation on Amazon products
 LightGCN for candidate retrieval, BERT4Rec for reranking, content-based
@@ -25,17 +34,21 @@ that idea against simpler baselines, and plain concatenation turned out to do be
 
 **[UBJR Eats API](https://github.com/no0e/ubjr-eats-api)** - a delivery platform backend
 FastAPI over a layered Model/DAO/Service architecture, JWT authentication for
-three user roles, PostgreSQL.tests modules across the data and service
+three user roles, PostgreSQL, and test modules across the data and service
 layers. Academic team project, 4 months.
 `FastAPI` `PostgreSQL` `JWT` `pytest`
 
 **[F1 Race Outcome Prediction](https://github.com/no0e/f1-race-prediction)** - win probability and pit strategy
-Logistic regression over sixty years of Formula One results, with dashboards
+Logistic regression over seventy years of Formula One results, with dashboards
 that read the race back: pit stop timing against finishing position, and
 constructor pace across eras. Academic team project, 4 months.
-`scikit-learn` `pandas` `Tkinter`
+`scikit-learn` `pandas` `matplotlib`
 
 ---
+
+Most of the projects above were first built in private school and team repositories (ENSAI, Leiden).
+I cloned them here, cleaned them up and translated them into English, so the commit dates show
+when they were republished, not when the work was done.
 
 ### Currently
 
