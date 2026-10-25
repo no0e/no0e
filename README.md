@@ -46,9 +46,8 @@ constructor pace across eras. Academic team project, 4 months.
 
 ---
 
-Most of the projects above were first built in private school and team repositories (ENSAI, Leiden).
-I cloned them here, cleaned them up and translated them into English, so the commit dates show
-when they were republished, not when the work was done.
+Most of the projects above were first built in school and team repositories.
+I cloned them here, cleaned them up and translated them into English.
 
 ### Currently
 
