@@ -2,31 +2,26 @@
 
 Statistics and machine learning engineering student at ENSAI, Rennes.
 
-I'm currently uploading my past projects here, organized and documented in English.
+> **About the commit dates.** Most of the projects below were first built in private school and team
+> repositories (ENSAI, Leiden). I forked them here, cleaned them up and translated them into English
+> in autumn 2026, so the commit history shows when each one was republished, not when the work was done.
 
 ---
 
 ### Projects
 
-**[Residual Trajectory Prediction](https://github.com/no0e/residual-trajectory-prediction)** - where a ship will be after it stops broadcasting
-A 317k-parameter mixture density network that predicts the *residual* of a
-parameter-free kinematic prior.90% confidence
-regions that hold 87.8 to 90.6% on vessels never seen in training. Beats a
-published transformer three times its size inside that paper's own protocol. ( repo still under construction ) 
-`PyTorch` `mixture density networks` `conformal prediction`
-
 **[Two-Stage Hybrid Recommender](https://github.com/no0e/two-stage-recommender)** - sequential recommendation on Amazon products
 LightGCN for candidate retrieval, BERT4Rec for reranking, content-based
 embeddings for the cold-start items neither of them can see. First place out of
-80 in an in-class Kaggle competition.
+80 teams (2 to 4 students each) in an in-class Kaggle competition.
 `LightGCN` `BERT4Rec` `cold start`
 
 **[Hateful Memes: CA-AGFN](https://github.com/no0e/hateful-memes-ca-agfn)** - multimodal detection when text and image disagree
-A meme is hateful in the gap between what it says and what it shows. This model
-builds that gap explicitly as a clash feature, then gates the two modalities
-with a language-conditioned entropy gate: the less the text commits to
-anything, the more the image decides.
-`XLM-RoBERTa` `CLIP` `cross-modal attention`
+A meme is often hateful only through the combination of its text and its image.
+The starting idea was to fuse the two explicitly: a clash feature between CLIP's text and image
+embeddings, and a gate that decides how much to trust each side. A 27-run ablation then tested
+that idea against simpler baselines, and plain concatenation turned out to do better.
+`CLIP` `multimodal fusion` `ablation study`
 
 **[UBJR Eats API](https://github.com/no0e/ubjr-eats-api)** - a delivery platform backend
 FastAPI over a layered Model/DAO/Service architecture, JWT authentication for
