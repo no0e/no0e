@@ -46,8 +46,6 @@ constructor pace across eras. Academic team project, 4 months.
 
 ---
 
-Most of the projects above were first built in school and team repositories.
-I cloned them here, cleaned them up and translated them into English.
 
 ### Currently
 
